@@ -1,0 +1,7 @@
+<map id="Encryptor" name="Encryptor">
+<area shape="rect" id="Node000001" title="Absztrakt ősosztály a karakterenként működő titkosítási algoritmusokhoz." alt="" coords="92,5,190,127"/>
+<area shape="rect" id="Node000002" href="$classCaesarEncryptor.html" title="Karaktereltoláson alapuló titkosítás." alt="" coords="5,175,135,296"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,138,98,176,93,174,109,143"/>
+<area shape="rect" id="Node000003" href="$classXorEncryptor.html" title="XOR műveleten alapuló titkosítási algoritmus." alt="" coords="159,175,267,296"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,138,190,175,185,175,172,143"/>
+</map>

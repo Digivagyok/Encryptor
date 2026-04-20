@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFileHandler" kind="class" language="C++" prot="public">
+    <compoundname>FileHandler</compoundname>
+    <includes refid="file__handler_8h" local="no">file_handler.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFileHandler_1aebd552a52b6e36f1efba0cf8a0678d3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * FileHandler::readAll</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>readAll</name>
+        <qualifiedname>FileHandler::readAll</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Fájl teljes beolvasása. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="file_handler.h" line="19" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classFileHandler_1ad712b78add5e6ac4b9219b92f3638c70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void FileHandler::writeAll</definition>
+        <argsstring>(const char *filename, const char *data)</argsstring>
+        <name>writeAll</name>
+        <qualifiedname>FileHandler::writeAll</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Fájlba írás. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="file_handler.h" line="24" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fájlok beolvasását és kiírását végzi. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>FileHandler</label>
+        <link refid="classFileHandler"/>
+      </node>
+    </collaborationgraph>
+    <location file="file_handler.h" line="13" column="1" bodyfile="file_handler.h" bodystart="13" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classFileHandler_1aebd552a52b6e36f1efba0cf8a0678d3a" prot="public" virt="non-virtual"><scope>FileHandler</scope><name>readAll</name></member>
+      <member refid="classFileHandler_1ad712b78add5e6ac4b9219b92f3638c70" prot="public" virt="non-virtual"><scope>FileHandler</scope><name>writeAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

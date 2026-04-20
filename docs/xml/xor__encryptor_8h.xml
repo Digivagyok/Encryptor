@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="xor__encryptor_8h" kind="file" language="C++">
+    <compoundname>xor_encryptor.h</compoundname>
+    <includes refid="encryptor_8h" local="yes">encryptor.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>encryptor.h</label>
+        <link refid="encryptor_8h"/>
+      </node>
+      <node id="1">
+        <label>xor_encryptor.h</label>
+        <link refid="xor__encryptor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classXorEncryptor" prot="public">XorEncryptor</innerclass>
+    <briefdescription>
+<para>XOR alapú titkosítás implementációja. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>XOR_ENCRYPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XOR_ENCRYPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="encryptor_8h" kindref="compound">encryptor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>@file<sp/>xor_encryptor.h</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>@brief<sp/>XOR<sp/>alapú<sp/>titkosítás<sp/>implementációja.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>@class<sp/>XorEncryptor</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>@brief<sp/>XOR<sp/>műveleten<sp/>alapuló<sp/>titkosítási<sp/>algoritmus.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Minden<sp/>karaktert<sp/>egy<sp/>kulccsal<sp/>XOR-ol.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>A<sp/>művelet<sp/>szimmetrikus,<sp/>tehát<sp/>encode<sp/>és<sp/>decode<sp/>azonos.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classXorEncryptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db" kindref="member">XorEncryptor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classEncryptor" kindref="compound">Encryptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" kindref="member">key</ref>;<sp/></highlight><highlight class="comment">/**&lt;<sp/>Titkosítási<sp/>kulcs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Konstruktor.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>key<sp/>A<sp/>titkosítási<sp/>kulcs.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db" kindref="member">XorEncryptor</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc" kindref="member">encode</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31" refid="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0" kindref="member">decode</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1" kindref="member">name</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="xor_encryptor.h"/>
+  </compounddef>
+</doxygen>

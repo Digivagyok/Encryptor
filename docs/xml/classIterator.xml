@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classIterator" kind="class" language="C++" prot="public">
+    <compoundname>Iterator</compoundname>
+    <includes refid="iterator_8h" local="no">iterator.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIterator_1a7d218db692389136fecf8aa72c740ce4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classEncryptedString" kindref="compound">EncryptedString</ref> *</type>
+        <definition>const EncryptedString* Iterator::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <qualifiedname>Iterator::owner</qualifiedname>
+        <briefdescription>
+<para>Tulajdonos string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="19" column="27" bodyfile="iterator.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2">Iterator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classIterator_1adf026305484f737317bf76acbe689bad" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Iterator::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>Iterator::index</qualifiedname>
+        <briefdescription>
+<para>Aktuális pozíció </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="20" column="18" bodyfile="iterator.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2">Iterator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIterator_1a1ec1f269e4dce01124bd8c49922341b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Iterator::Iterator</definition>
+        <argsstring>(const EncryptedString *owner, unsigned int index)</argsstring>
+        <name>Iterator</name>
+        <qualifiedname>Iterator::Iterator</qualifiedname>
+        <param>
+          <type>const <ref refid="classEncryptedString" kindref="compound">EncryptedString</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classIterator_1a7d218db692389136fecf8aa72c740ce4" kindref="member">owner</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string, amin iterálunk. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classIterator_1adf026305484f737317bf76acbe689bad" kindref="member">index</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kezdő index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="29" column="5"/>
+        <references refid="classIterator_1adf026305484f737317bf76acbe689bad" compoundref="iterator_8h" startline="20">index</references>
+        <references refid="classIterator_1a7d218db692389136fecf8aa72c740ce4" compoundref="iterator_8h" startline="19">owner</references>
+        <referencedby refid="classIterator_1a8da8dfec94f64cac107415cafdf657e8">operator!=</referencedby>
+        <referencedby refid="classIterator_1a091c7cf45883f9196ebcda0ad97b59f8">operator++</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classIterator_1af62cf8c1a8bcdc347deeba1e3ca3b3ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>Iterator::operator*</qualifiedname>
+        <briefdescription>
+<para>Dereferálás. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Az aktuális karakter (dekódolva). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="35" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIterator_1a091c7cf45883f9196ebcda0ad97b59f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIterator" kindref="compound">Iterator</ref> &amp;</type>
+        <definition>Iterator &amp; Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>Iterator::operator++</qualifiedname>
+        <briefdescription>
+<para>Prefix növelés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Az iterátor referenciája. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="41" column="14"/>
+        <references refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2">Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classIterator_1a8da8dfec94f64cac107415cafdf657e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Összehasonlítás. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iterator.h" line="46" column="10"/>
+        <references refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2">Iterator</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterátor az <ref refid="classEncryptedString" kindref="compound">EncryptedString</ref> bejárásához. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A dekódolt karaktereken iterál végig. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>EncryptedString</label>
+        <link refid="classEncryptedString"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-enc</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+      <node id="1">
+        <label>Iterator</label>
+        <link refid="classIterator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="iterator.h" line="17" column="1" bodyfile="iterator.h" bodystart="17" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classIterator_1adf026305484f737317bf76acbe689bad" prot="private" virt="non-virtual"><scope>Iterator</scope><name>index</name></member>
+      <member refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2" prot="public" virt="non-virtual"><scope>Iterator</scope><name>Iterator</name></member>
+      <member refid="classIterator_1a8da8dfec94f64cac107415cafdf657e8" prot="public" virt="non-virtual"><scope>Iterator</scope><name>operator!=</name></member>
+      <member refid="classIterator_1af62cf8c1a8bcdc347deeba1e3ca3b3ac" prot="public" virt="non-virtual"><scope>Iterator</scope><name>operator*</name></member>
+      <member refid="classIterator_1a091c7cf45883f9196ebcda0ad97b59f8" prot="public" virt="non-virtual"><scope>Iterator</scope><name>operator++</name></member>
+      <member refid="classIterator_1a7d218db692389136fecf8aa72c740ce4" prot="private" virt="non-virtual"><scope>Iterator</scope><name>owner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

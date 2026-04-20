@@ -1,0 +1,403 @@
+\doxysection{Encrypted\+String Class Reference}
+\hypertarget{classEncryptedString}{}\label{classEncryptedString}\index{EncryptedString@{EncryptedString}}
+
+
+Titkosított formában tárolt szöveg.  
+
+
+
+
+{\ttfamily \+\#include $<$encrypted\+\_\+string.\+h$>$}
+
+
+
+Collaboration diagram for Encrypted\+String:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classEncryptedString__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String}} (const \doxymbox{\hyperlink{classEncryptor}{Encryptor}} \&\doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1}{Encrypted\+String}} (const char \texorpdfstring{$\ast$}{*}text, const \doxymbox{\hyperlink{classEncryptor}{Encryptor}} \&\doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor C-\/stringből. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e}{Encrypted\+String}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&other)
+\begin{DoxyCompactList}\small\item\em Másoló konstruktor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString_a07cc336e52ccb1c13f3906fe1ad76540}{\texorpdfstring{$\sim$}{\string~}\+Encrypted\+String}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \& \doxymbox{\hyperlink{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07}{operator=}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&other)
+\begin{DoxyCompactList}\small\item\em Értékadás operátor. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classEncryptedString_af4ea18aa259d7c67aa99b0402c828d95}{operator\+[$\,$]\+}} (unsigned int index) const
+\begin{DoxyCompactList}\small\item\em Indexelés. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \doxymbox{\hyperlink{classEncryptedString_a7642b32becafa537e114018057e04cf8}{operator+}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Összefűzés. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \& \doxymbox{\hyperlink{classEncryptedString_a65b3f943a863377081b62964be2da319}{operator+=}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Összefűzés és értékadás. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500}{operator==}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Összehasonlítás. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d}{operator!=}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&rhs) const
+\item 
+void \doxymbox{\hyperlink{classEncryptedString_a58b943ea069028936b779e4f97eb4b3b}{push\+\_\+back}} (char c)
+\begin{DoxyCompactList}\small\item\em Karakter hozzáadása. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{classEncryptedString_a404cc08e11834c389d5850afcacf12e7}{size}} () const
+\begin{DoxyCompactList}\small\item\em Méret lekérdezése. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classEncryptedString_a9ab2f1a0417fc5ff26bd139c677d7f65}{clear}} ()
+\begin{DoxyCompactList}\small\item\em String törlése. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classIterator}{Iterator}} \doxymbox{\hyperlink{classEncryptedString_aef690153f97c26e7fe413bb223acebd3}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Iterátor kezdete. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classIterator}{Iterator}} \doxymbox{\hyperlink{classEncryptedString_acba958d3a367d0e450958a99b1613299}{end}} () const
+\begin{DoxyCompactList}\small\item\em Iterátor vége. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classEncryptedString_a7a3a3bab3ae583c91452196121300c14}{reserve}} (unsigned int new\+Cap)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classEncryptedString_a5a0694b44a8013330e49253202a8a571}{data}}
+\begin{DoxyCompactList}\small\item\em Titkosított karakterek. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{classEncryptedString_ad20fe361698e9886a2b69482d194169d}{length}}
+\begin{DoxyCompactList}\small\item\em Aktuális hossz. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{classEncryptedString_a10b04678f1e17c2f433fdb6130bb7342}{capacity}}
+\begin{DoxyCompactList}\small\item\em Kapacitás. \end{DoxyCompactList}\item 
+const \doxymbox{\hyperlink{classEncryptor}{Encryptor}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}}
+\begin{DoxyCompactList}\small\item\em Titkosítási algoritmus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Titkosított formában tárolt szöveg. 
+
+A karaktereket titkosítva tárolja, de a felhasználó számára dekódolt formában biztosítja az elérést. 
+
+Definition at line \doxymbox{\hyperlink{encrypted__string_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{encrypted__string_8h_source}{encrypted\+\_\+string.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{classEncryptedString_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{EncryptedString()}{EncryptedString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2} 
+Encrypted\+String::\+\+Encrypted\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptor}{Encryptor}} \&}]{enc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor. 
+
+
+
+References \doxymbox{\hyperlink{encrypted__string_8h_source_l00024}{enc}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e}{Encrypted\+String()}}, \doxymbox{\hyperlink{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d}{operator!=()}}, \doxymbox{\hyperlink{classEncryptedString_a7642b32becafa537e114018057e04cf8}{operator+()}}, \doxymbox{\hyperlink{classEncryptedString_a65b3f943a863377081b62964be2da319}{operator+=()}}, \doxymbox{\hyperlink{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07}{operator=()}}, and \doxymbox{\hyperlink{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500}{operator==()}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1}\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{EncryptedString()}{EncryptedString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1} 
+Encrypted\+String::\+\+Encrypted\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{, }\item[{const \doxymbox{\hyperlink{classEncryptor}{Encryptor}} \&}]{enc}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor C-\/stringből. 
+
+
+
+References \doxymbox{\hyperlink{encrypted__string_8h_source_l00024}{enc}}.
+
+\Hypertarget{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e}\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\index{EncryptedString@{EncryptedString}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{EncryptedString()}{EncryptedString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e} 
+Encrypted\+String::\+\+Encrypted\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Másoló konstruktor. 
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_a07cc336e52ccb1c13f3906fe1ad76540}\index{EncryptedString@{EncryptedString}!````~EncryptedString@{\texorpdfstring{$\sim$}{\string~}EncryptedString}}
+\index{````~EncryptedString@{\texorpdfstring{$\sim$}{\string~}EncryptedString}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}EncryptedString()}{\string~EncryptedString()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a07cc336e52ccb1c13f3906fe1ad76540} 
+Encrypted\+String::\+\texorpdfstring{$\sim$}{\string~}\+Encrypted\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classEncryptedString_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEncryptedString_aef690153f97c26e7fe413bb223acebd3}\index{EncryptedString@{EncryptedString}!begin@{begin}}
+\index{begin@{begin}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{classEncryptedString_aef690153f97c26e7fe413bb223acebd3} 
+\doxymbox{\hyperlink{classIterator}{Iterator}} Encrypted\+String::\+begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Iterátor kezdete. 
+
+\Hypertarget{classEncryptedString_a9ab2f1a0417fc5ff26bd139c677d7f65}\index{EncryptedString@{EncryptedString}!clear@{clear}}
+\index{clear@{clear}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a9ab2f1a0417fc5ff26bd139c677d7f65} 
+void Encrypted\+String::\+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+String törlése. 
+
+\Hypertarget{classEncryptedString_acba958d3a367d0e450958a99b1613299}\index{EncryptedString@{EncryptedString}!end@{end}}
+\index{end@{end}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{classEncryptedString_acba958d3a367d0e450958a99b1613299} 
+\doxymbox{\hyperlink{classIterator}{Iterator}} Encrypted\+String::\+end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Iterátor vége. 
+
+\Hypertarget{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d}\index{EncryptedString@{EncryptedString}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d} 
+bool Encrypted\+String::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_a7642b32becafa537e114018057e04cf8}\index{EncryptedString@{EncryptedString}!operator+@{operator+}}
+\index{operator+@{operator+}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a7642b32becafa537e114018057e04cf8} 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} Encrypted\+String::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+Összefűzés. 
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_a7642b32becafa537e114018057e04cf8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_a65b3f943a863377081b62964be2da319}\index{EncryptedString@{EncryptedString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a65b3f943a863377081b62964be2da319} 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \& Encrypted\+String::\+operator+= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+
+
+Összefűzés és értékadás. 
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_a65b3f943a863377081b62964be2da319_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07}\index{EncryptedString@{EncryptedString}!operator=@{operator=}}
+\index{operator=@{operator=}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07} 
+\doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \& Encrypted\+String::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Értékadás operátor. 
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500}\index{EncryptedString@{EncryptedString}!operator==@{operator==}}
+\index{operator==@{operator==}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500} 
+bool Encrypted\+String::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+Összehasonlítás. 
+
+
+
+References \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEncryptedString_af4ea18aa259d7c67aa99b0402c828d95}\index{EncryptedString@{EncryptedString}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{classEncryptedString_af4ea18aa259d7c67aa99b0402c828d95} 
+char Encrypted\+String::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{unsigned int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Indexelés. 
+
+\Hypertarget{classEncryptedString_a58b943ea069028936b779e4f97eb4b3b}\index{EncryptedString@{EncryptedString}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a58b943ea069028936b779e4f97eb4b3b} 
+void Encrypted\+String::\+push\+\_\+back (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Karakter hozzáadása. 
+
+\Hypertarget{classEncryptedString_a7a3a3bab3ae583c91452196121300c14}\index{EncryptedString@{EncryptedString}!reserve@{reserve}}
+\index{reserve@{reserve}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a7a3a3bab3ae583c91452196121300c14} 
+void Encrypted\+String::\+reserve (\begin{DoxyParamCaption}\item[{unsigned int}]{new\+Cap}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEncryptedString_a404cc08e11834c389d5850afcacf12e7}\index{EncryptedString@{EncryptedString}!size@{size}}
+\index{size@{size}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classEncryptedString_a404cc08e11834c389d5850afcacf12e7} 
+unsigned int Encrypted\+String::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Méret lekérdezése. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classEncryptedString_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEncryptedString_a10b04678f1e17c2f433fdb6130bb7342}\index{EncryptedString@{EncryptedString}!capacity@{capacity}}
+\index{capacity@{capacity}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily \label{classEncryptedString_a10b04678f1e17c2f433fdb6130bb7342} 
+unsigned int Encrypted\+String::\+capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kapacitás. 
+
+
+
+Definition at line \doxymbox{\hyperlink{encrypted__string_8h_source_l00023}{23}} of file \doxymbox{\hyperlink{encrypted__string_8h_source}{encrypted\+\_\+string.\+h}}.
+
+\Hypertarget{classEncryptedString_a5a0694b44a8013330e49253202a8a571}\index{EncryptedString@{EncryptedString}!data@{data}}
+\index{data@{data}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classEncryptedString_a5a0694b44a8013330e49253202a8a571} 
+char\texorpdfstring{$\ast$}{*} Encrypted\+String::\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Titkosított karakterek. 
+
+
+
+Definition at line \doxymbox{\hyperlink{encrypted__string_8h_source_l00021}{21}} of file \doxymbox{\hyperlink{encrypted__string_8h_source}{encrypted\+\_\+string.\+h}}.
+
+\Hypertarget{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}\index{EncryptedString@{EncryptedString}!enc@{enc}}
+\index{enc@{enc}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{enc}{enc}}
+{\footnotesize\ttfamily \label{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd} 
+const \doxymbox{\hyperlink{classEncryptor}{Encryptor}}\texorpdfstring{$\ast$}{*} Encrypted\+String::\+enc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Titkosítási algoritmus. 
+
+
+
+Definition at line \doxymbox{\hyperlink{encrypted__string_8h_source_l00024}{24}} of file \doxymbox{\hyperlink{encrypted__string_8h_source}{encrypted\+\_\+string.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1}{Encrypted\+String()}}, and \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{Encrypted\+String()}}.
+
+\Hypertarget{classEncryptedString_ad20fe361698e9886a2b69482d194169d}\index{EncryptedString@{EncryptedString}!length@{length}}
+\index{length@{length}!EncryptedString@{EncryptedString}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classEncryptedString_ad20fe361698e9886a2b69482d194169d} 
+unsigned int Encrypted\+String::\+length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktuális hossz. 
+
+
+
+Definition at line \doxymbox{\hyperlink{encrypted__string_8h_source_l00022}{22}} of file \doxymbox{\hyperlink{encrypted__string_8h_source}{encrypted\+\_\+string.\+h}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{encrypted__string_8h}{encrypted\+\_\+string.\+h}}\end{DoxyCompactItemize}

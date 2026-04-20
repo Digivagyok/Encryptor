@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="encrypted__string_8h" kind="file" language="C++">
+    <compoundname>encrypted_string.h</compoundname>
+    <includes refid="encryptor_8h" local="yes">encryptor.h</includes>
+    <includes refid="iterator_8h" local="yes">iterator.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>encrypted_string.h</label>
+        <link refid="encrypted__string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>encryptor.h</label>
+        <link refid="encryptor_8h"/>
+      </node>
+      <node id="3">
+        <label>iterator.h</label>
+        <link refid="iterator_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classEncryptedString" prot="public">EncryptedString</innerclass>
+    <briefdescription>
+<para>Titkosított string osztály deklarációja. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ENCRYPTED_STRING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENCRYPTED_STRING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="encryptor_8h" kindref="compound">encryptor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="iterator_8h" kindref="compound">iterator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>@file<sp/>encrypted_string.h</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Titkosított<sp/>string<sp/>osztály<sp/>deklarációja.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>@class<sp/>EncryptedString</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Titkosított<sp/>formában<sp/>tárolt<sp/>szöveg.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>A<sp/>karaktereket<sp/>titkosítva<sp/>tárolja,<sp/>de<sp/>a<sp/>felhasználó</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>számára<sp/>dekódolt<sp/>formában<sp/>biztosítja<sp/>az<sp/>elérést.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classEncryptedString" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classEncryptedString_1a5a0694b44a8013330e49253202a8a571" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classEncryptedString_1a5a0694b44a8013330e49253202a8a571" kindref="member">data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/**&lt;<sp/>Titkosított<sp/>karakterek<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classEncryptedString_1ad20fe361698e9886a2b69482d194169d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1ad20fe361698e9886a2b69482d194169d" kindref="member">length</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/**&lt;<sp/>Aktuális<sp/>hossz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classEncryptedString_1a10b04678f1e17c2f433fdb6130bb7342" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1a10b04678f1e17c2f433fdb6130bb7342" kindref="member">capacity</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/**&lt;<sp/>Kapacitás<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classEncryptedString_1a1c92ebddc8e851953d3216f886c283fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptor" kindref="compound">Encryptor</ref>*<sp/><ref refid="classEncryptedString_1a1c92ebddc8e851953d3216f886c283fd" kindref="member">enc</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/**&lt;<sp/>Titkosítási<sp/>algoritmus<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classEncryptedString_1a7a3a3bab3ae583c91452196121300c14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1a7a3a3bab3ae583c91452196121300c14" kindref="member">reserve</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newCap);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Konstruktor.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptor" kindref="compound">Encryptor</ref>&amp;<sp/><ref refid="classEncryptedString_1a1c92ebddc8e851953d3216f886c283fd" kindref="member">enc</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Konstruktor<sp/>C-stringből.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classEncryptedString_1a78f1e8e81f460f38461c6de291bf1ba1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1a78f1e8e81f460f38461c6de291bf1ba1" kindref="member">EncryptedString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptor" kindref="compound">Encryptor</ref>&amp;<sp/><ref refid="classEncryptedString_1a1c92ebddc8e851953d3216f886c283fd" kindref="member">enc</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Másoló<sp/>konstruktor.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classEncryptedString_1ad6b6d7d9e77e5d065e826f87c7529a8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1ad6b6d7d9e77e5d065e826f87c7529a8e" kindref="member">EncryptedString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Destruktor.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classEncryptedString_1a07cc336e52ccb1c13f3906fe1ad76540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1a07cc336e52ccb1c13f3906fe1ad76540" kindref="member">~EncryptedString</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Értékadás<sp/>operátor.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classEncryptedString_1ae3c6d6e41c3e33b4968f77f4605cfc07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/><ref refid="classEncryptedString_1ae3c6d6e41c3e33b4968f77f4605cfc07" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Indexelés.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classEncryptedString_1af4ea18aa259d7c67aa99b0402c828d95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1af4ea18aa259d7c67aa99b0402c828d95" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Összefűzés.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classEncryptedString_1a7642b32becafa537e114018057e04cf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref><sp/><ref refid="classEncryptedString_1a7642b32becafa537e114018057e04cf8" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Összefűzés<sp/>és<sp/>értékadás.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classEncryptedString_1a65b3f943a863377081b62964be2da319" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/><ref refid="classEncryptedString_1a65b3f943a863377081b62964be2da319" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Összehasonlítás.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classEncryptedString_1aafa3180dbc8dbee5b120e21067c96500" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aafa3180dbc8dbee5b120e21067c96500" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classEncryptedString_1afcc38e3e269e340403fbc00d456b3e8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1afcc38e3e269e340403fbc00d456b3e8d" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kindref="member">EncryptedString</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Karakter<sp/>hozzáadása.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classEncryptedString_1a58b943ea069028936b779e4f97eb4b3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1a58b943ea069028936b779e4f97eb4b3b" kindref="member">push_back</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Méret<sp/>lekérdezése.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classEncryptedString_1a404cc08e11834c389d5850afcacf12e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1a404cc08e11834c389d5850afcacf12e7" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>String<sp/>törlése.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classEncryptedString_1a9ab2f1a0417fc5ff26bd139c677d7f65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEncryptedString_1a9ab2f1a0417fc5ff26bd139c677d7f65" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Iterátor<sp/>kezdete.</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classEncryptedString_1aef690153f97c26e7fe413bb223acebd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIterator" kindref="compound">Iterator</ref><sp/><ref refid="classEncryptedString_1aef690153f97c26e7fe413bb223acebd3" kindref="member">begin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Iterátor<sp/>vége.</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classEncryptedString_1acba958d3a367d0e450958a99b1613299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIterator" kindref="compound">Iterator</ref><sp/><ref refid="classEncryptedString_1acba958d3a367d0e450958a99b1613299" kindref="member">end</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="encrypted_string.h"/>
+  </compounddef>
+</doxygen>

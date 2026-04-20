@@ -1,0 +1,179 @@
+\doxysection{Caesar\+Encryptor Class Reference}
+\hypertarget{classCaesarEncryptor}{}\label{classCaesarEncryptor}\index{CaesarEncryptor@{CaesarEncryptor}}
+
+
+Karaktereltoláson alapuló titkosítás.  
+
+
+
+
+{\ttfamily \+\#include $<$caesar\+\_\+encryptor.\+h$>$}
+
+
+
+Inheritance diagram for Caesar\+Encryptor:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classCaesarEncryptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Caesar\+Encryptor:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classCaesarEncryptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}{Caesar\+Encryptor}} (int \doxymbox{\hyperlink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{shift}})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classCaesarEncryptor_a22fb6b4319595f08fb517741213cb913}{encode}} (char c) const
+\begin{DoxyCompactList}\small\item\em Egy karakter titkosítása. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classCaesarEncryptor_a8b2e70d3a94051149bbe46b2e6b64dff}{decode}} (char c) const
+\begin{DoxyCompactList}\small\item\em Egy karakter visszafejtése. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classCaesarEncryptor_af1885fe2eea2335106af78417d743e56}{name}} () const
+\begin{DoxyCompactList}\small\item\em Az algoritmus nevének lekérdezése. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classEncryptor}{Encryptor}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{classEncryptor_af52e89ff451420227dbc9bbe44dcf9ee}{\texorpdfstring{$\sim$}{\string~}\+Encryptor}} ()
+\begin{DoxyCompactList}\small\item\em Virtuális destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{shift}}
+\begin{DoxyCompactList}\small\item\em Eltolás mértéke. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Karaktereltoláson alapuló titkosítás. 
+
+A karaktereket egy adott értékkel eltolja az ASCII tartományon belül. 
+
+Definition at line \doxymbox{\hyperlink{caesar__encryptor_8h_source_l00017}{17}} of file \doxymbox{\hyperlink{caesar__encryptor_8h_source}{caesar\+\_\+encryptor.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{classCaesarEncryptor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}\index{CaesarEncryptor@{CaesarEncryptor}!CaesarEncryptor@{CaesarEncryptor}}
+\index{CaesarEncryptor@{CaesarEncryptor}!CaesarEncryptor@{CaesarEncryptor}}
+\doxysubsubsection{\texorpdfstring{CaesarEncryptor()}{CaesarEncryptor()}}
+{\footnotesize\ttfamily \label{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f} 
+Caesar\+Encryptor::\+\+Caesar\+Encryptor (\begin{DoxyParamCaption}\item[{int}]{shift}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{shift}} & Az eltolás mértéke. \\
+\hline
+\end{DoxyParams}
+
+
+References \doxymbox{\hyperlink{caesar__encryptor_8h_source_l00019}{shift}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{classCaesarEncryptor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCaesarEncryptor_a8b2e70d3a94051149bbe46b2e6b64dff}\index{CaesarEncryptor@{CaesarEncryptor}!decode@{decode}}
+\index{decode@{decode}!CaesarEncryptor@{CaesarEncryptor}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{classCaesarEncryptor_a8b2e70d3a94051149bbe46b2e6b64dff} 
+char Caesar\+Encryptor::\+decode (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Egy karakter visszafejtése. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & A visszafejtendő karakter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dekódolt karakter. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a5b303b9648d0a9fb88a5d0e510a1b22d}{Encryptor}}.
+
+\Hypertarget{classCaesarEncryptor_a22fb6b4319595f08fb517741213cb913}\index{CaesarEncryptor@{CaesarEncryptor}!encode@{encode}}
+\index{encode@{encode}!CaesarEncryptor@{CaesarEncryptor}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{classCaesarEncryptor_a22fb6b4319595f08fb517741213cb913} 
+char Caesar\+Encryptor::\+encode (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Egy karakter titkosítása. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & A titkosítandó karakter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A titkosított karakter. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a5d2b2c905e12debeab5f4826c7ae4dea}{Encryptor}}.
+
+\Hypertarget{classCaesarEncryptor_af1885fe2eea2335106af78417d743e56}\index{CaesarEncryptor@{CaesarEncryptor}!name@{name}}
+\index{name@{name}!CaesarEncryptor@{CaesarEncryptor}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classCaesarEncryptor_af1885fe2eea2335106af78417d743e56} 
+const char \texorpdfstring{$\ast$}{*} Caesar\+Encryptor::\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Az algoritmus nevének lekérdezése. 
+
+\begin{DoxyReturn}{Returns}
+Az algoritmus neve. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a13a730b0a7c85f4cf00db78781f507b5}{Encryptor}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classCaesarEncryptor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}\index{CaesarEncryptor@{CaesarEncryptor}!shift@{shift}}
+\index{shift@{shift}!CaesarEncryptor@{CaesarEncryptor}}
+\doxysubsubsection{\texorpdfstring{shift}{shift}}
+{\footnotesize\ttfamily \label{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a} 
+int Caesar\+Encryptor::\+shift\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Eltolás mértéke. 
+
+
+
+Definition at line \doxymbox{\hyperlink{caesar__encryptor_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{caesar__encryptor_8h_source}{caesar\+\_\+encryptor.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}{Caesar\+Encryptor()}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{caesar__encryptor_8h}{caesar\+\_\+encryptor.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\doxysection{caesar\+\_\+encryptor.\+h}
+\hypertarget{caesar__encryptor_8h_source}{}\label{caesar__encryptor_8h_source}\doxymbox{\hyperlink{caesar__encryptor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ CAESAR\_ENCRYPTOR\_H}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ CAESAR\_ENCRYPTOR\_H}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{encryptor_8h}{encryptor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00005}00005\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00006}00006\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00007}00007\ \textcolor{comment}{\ *\ @file\ caesar\_encryptor.h}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00008}00008\ \textcolor{comment}{\ *\ @brief\ Caesar-\/féle\ karaktereltolás\ implementációja.}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00009}00009\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00011}00011\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00012}00012\ \textcolor{comment}{\ *\ @class\ CaesarEncryptor}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00013}00013\ \textcolor{comment}{\ *\ @brief\ Karaktereltoláson\ alapuló\ titkosítás.}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00014}00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00015}00015\ \textcolor{comment}{\ *\ A\ karaktereket\ egy\ adott\ értékkel\ eltolja\ az\ ASCII\ tartományon\ belül.}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00016}00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00017}\doxymbox{\hyperlink{classCaesarEncryptor}{00017}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}{CaesarEncryptor}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classEncryptor}{Encryptor}}\ \{}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00018}00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00019}\doxymbox{\hyperlink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{00019}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{shift}};\ \textcolor{comment}{/**<\ Eltolás\ mértéke\ */}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00021}00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00022}00022\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00023}00023\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Konstruktor.}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ @param\ shift\ Az\ eltolás\ mértéke.}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00027}\doxymbox{\hyperlink{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}{00027}}\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classCaesarEncryptor_a3f63209ec17bdb1106659be4cf4b492f}{CaesarEncryptor}}(\textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classCaesarEncryptor_ab6eda501440152f48da3f5af447e983a}{shift}});}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00029}\doxymbox{\hyperlink{classCaesarEncryptor_a22fb6b4319595f08fb517741213cb913}{00029}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classCaesarEncryptor_a22fb6b4319595f08fb517741213cb913}{encode}}(\textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00030}\doxymbox{\hyperlink{classCaesarEncryptor_a8b2e70d3a94051149bbe46b2e6b64dff}{00030}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classCaesarEncryptor_a8b2e70d3a94051149bbe46b2e6b64dff}{decode}}(\textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00031}\doxymbox{\hyperlink{classCaesarEncryptor_af1885fe2eea2335106af78417d743e56}{00031}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classCaesarEncryptor_af1885fe2eea2335106af78417d743e56}{name}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{caesar__encryptor_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

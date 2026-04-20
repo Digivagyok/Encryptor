@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classEncryptor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Encryptor</compoundname>
+    <derivedcompoundref refid="classCaesarEncryptor" prot="public" virt="non-virtual">CaesarEncryptor</derivedcompoundref>
+    <derivedcompoundref refid="classXorEncryptor" prot="public" virt="non-virtual">XorEncryptor</derivedcompoundref>
+    <includes refid="encryptor_8h" local="no">encryptor.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEncryptor_1a5d2b2c905e12debeab5f4826c7ae4dea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>char</type>
+        <definition>virtual char Encryptor::encode</definition>
+        <argsstring>(char c) const =0</argsstring>
+        <name>encode</name>
+        <qualifiedname>Encryptor::encode</qualifiedname>
+        <reimplementedby refid="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913">encode</reimplementedby>
+        <reimplementedby refid="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc">encode</reimplementedby>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter titkosítása. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A titkosítandó karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A titkosított karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="encryptor.h" line="24" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classEncryptor_1a5b303b9648d0a9fb88a5d0e510a1b22d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>char</type>
+        <definition>virtual char Encryptor::decode</definition>
+        <argsstring>(char c) const =0</argsstring>
+        <name>decode</name>
+        <qualifiedname>Encryptor::decode</qualifiedname>
+        <reimplementedby refid="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff">decode</reimplementedby>
+        <reimplementedby refid="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0">decode</reimplementedby>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter visszafejtése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A visszafejtendő karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A dekódolt karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="encryptor.h" line="31" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classEncryptor_1a13a730b0a7c85f4cf00db78781f507b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char * Encryptor::name</definition>
+        <argsstring>() const =0</argsstring>
+        <name>name</name>
+        <qualifiedname>Encryptor::name</qualifiedname>
+        <reimplementedby refid="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56">name</reimplementedby>
+        <reimplementedby refid="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1">name</reimplementedby>
+        <briefdescription>
+<para>Az algoritmus nevének lekérdezése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Az algoritmus neve. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="encryptor.h" line="37" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classEncryptor_1af52e89ff451420227dbc9bbe44dcf9ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Encryptor::~Encryptor</definition>
+        <argsstring>()</argsstring>
+        <name>~Encryptor</name>
+        <qualifiedname>Encryptor::~Encryptor</qualifiedname>
+        <briefdescription>
+<para>Virtuális destruktor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="encryptor.h" line="42" column="13" bodyfile="encryptor.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Absztrakt ősosztály a karakterenként működő titkosítási algoritmusokhoz. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Az osztály egységes interfészt biztosít különböző titkosítási algoritmusok számára. A konkrét algoritmusok ebből az osztályból származnak. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CaesarEncryptor</label>
+        <link refid="classCaesarEncryptor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+      <node id="3">
+        <label>XorEncryptor</label>
+        <link refid="classXorEncryptor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="encryptor.h" line="16" column="1" bodyfile="encryptor.h" bodystart="16" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classEncryptor_1a5b303b9648d0a9fb88a5d0e510a1b22d" prot="public" virt="pure-virtual"><scope>Encryptor</scope><name>decode</name></member>
+      <member refid="classEncryptor_1a5d2b2c905e12debeab5f4826c7ae4dea" prot="public" virt="pure-virtual"><scope>Encryptor</scope><name>encode</name></member>
+      <member refid="classEncryptor_1a13a730b0a7c85f4cf00db78781f507b5" prot="public" virt="pure-virtual"><scope>Encryptor</scope><name>name</name></member>
+      <member refid="classEncryptor_1af52e89ff451420227dbc9bbe44dcf9ee" prot="public" virt="virtual"><scope>Encryptor</scope><name>~Encryptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

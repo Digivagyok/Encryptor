@@ -1,0 +1,36 @@
+\doxysection{argument\+\_\+parser.\+h}
+\hypertarget{argument__parser_8h_source}{}\label{argument__parser_8h_source}\doxymbox{\hyperlink{argument__parser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ARGUMENT\_PARSER\_H}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ARGUMENT\_PARSER\_H}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00005}00005\ \textcolor{comment}{\ *\ @file\ argument\_parser.h}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00006}00006\ \textcolor{comment}{\ *\ @brief\ Parancssori\ argumentum\ feldolgozó.}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00007}00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00008}00008\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00009}00009\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00010}00010\ \textcolor{comment}{\ *\ @class\ ArgumentParser}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00011}00011\ \textcolor{comment}{\ *\ @brief\ CLI\ argumentumok\ feldolgozásáért\ felel.}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00012}00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00013}\doxymbox{\hyperlink{classArgumentParser}{00013}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classArgumentParser_a760403f063ce0bc16b35c7f5d4e84c04}{ArgumentParser}}\ \{}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00014}00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00015}\doxymbox{\hyperlink{classArgumentParser_a8fb7fa834d7a74d6e776a59e35555a1e}{00015}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_a8fb7fa834d7a74d6e776a59e35555a1e}{algorithm}};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00016}\doxymbox{\hyperlink{classArgumentParser_a06faec96520cd124bf41160727939588}{00016}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_a06faec96520cd124bf41160727939588}{input}};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00017}\doxymbox{\hyperlink{classArgumentParser_a9af23d21cb5edef53492247567626e0f}{00017}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_a9af23d21cb5edef53492247567626e0f}{output}};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00018}\doxymbox{\hyperlink{classArgumentParser_a9f6bbaaf5445745b23368bbf050920de}{00018}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classArgumentParser_a9f6bbaaf5445745b23368bbf050920de}{key}};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00019}\doxymbox{\hyperlink{classArgumentParser_abedc7c02b543e81d063f857c44c17c0c}{00019}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classArgumentParser_abedc7c02b543e81d063f857c44c17c0c}{help}};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00021}00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00022}\doxymbox{\hyperlink{classArgumentParser_a760403f063ce0bc16b35c7f5d4e84c04}{00022}}\ \ \ \ \ \doxymbox{\hyperlink{classArgumentParser_a760403f063ce0bc16b35c7f5d4e84c04}{ArgumentParser}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00024}\doxymbox{\hyperlink{classArgumentParser_a42d9b05b33dc1b98c581590781be7b38}{00024}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_a42d9b05b33dc1b98c581590781be7b38}{getAlgorithm}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00025}\doxymbox{\hyperlink{classArgumentParser_ab3597a2ad29893c8b67c3bdae29124d4}{00025}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_ab3597a2ad29893c8b67c3bdae29124d4}{getInput}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00026}\doxymbox{\hyperlink{classArgumentParser_a4e8fa824715e75e95ff981680cfc94a1}{00026}}\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classArgumentParser_a4e8fa824715e75e95ff981680cfc94a1}{getOutput}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00027}\doxymbox{\hyperlink{classArgumentParser_ad918bbb3a4c4a064abcdff3029ae15a1}{00027}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classArgumentParser_ad918bbb3a4c4a064abcdff3029ae15a1}{getKey}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00028}\doxymbox{\hyperlink{classArgumentParser_a7d802960cab1a141c88e5617e0e2e0c0}{00028}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classArgumentParser_a7d802960cab1a141c88e5617e0e2e0c0}{isHelp}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00029}00029\ \};}
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{argument__parser_8h_source_l00031}00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

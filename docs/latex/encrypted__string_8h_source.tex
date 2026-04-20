@@ -1,0 +1,108 @@
+\doxysection{encrypted\+\_\+string.\+h}
+\hypertarget{encrypted__string_8h_source}{}\label{encrypted__string_8h_source}\doxymbox{\hyperlink{encrypted__string_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENCRYPTED\_STRING\_H}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENCRYPTED\_STRING\_H}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{encryptor_8h}{encryptor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{iterator_8h}{iterator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00007}00007\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00008}00008\ \textcolor{comment}{\ *\ @file\ encrypted\_string.h}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00009}00009\ \textcolor{comment}{\ *\ @brief\ Titkosított\ string\ osztály\ deklarációja.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00011}00011\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00012}00012\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00013}00013\ \textcolor{comment}{\ *\ @class\ EncryptedString}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00014}00014\ \textcolor{comment}{\ *\ @brief\ Titkosított\ formában\ tárolt\ szöveg.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00015}00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00016}00016\ \textcolor{comment}{\ *\ A\ karaktereket\ titkosítva\ tárolja,\ de\ a\ felhasználó}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00017}00017\ \textcolor{comment}{\ *\ számára\ dekódolt\ formában\ biztosítja\ az\ elérést.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00018}00018\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00019}\doxymbox{\hyperlink{classEncryptedString}{00019}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\ \{}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00020}00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00021}\doxymbox{\hyperlink{classEncryptedString_a5a0694b44a8013330e49253202a8a571}{00021}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classEncryptedString_a5a0694b44a8013330e49253202a8a571}{data}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/**<\ Titkosított\ karakterek\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00022}\doxymbox{\hyperlink{classEncryptedString_ad20fe361698e9886a2b69482d194169d}{00022}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEncryptedString_ad20fe361698e9886a2b69482d194169d}{length}};\ \ \ \ \ \textcolor{comment}{/**<\ Aktuális\ hossz\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00023}\doxymbox{\hyperlink{classEncryptedString_a10b04678f1e17c2f433fdb6130bb7342}{00023}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEncryptedString_a10b04678f1e17c2f433fdb6130bb7342}{capacity}};\ \ \ \textcolor{comment}{/**<\ Kapacitás\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00024}\doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{00024}}\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptor}{Encryptor}}*\ \doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}};\ \ \ \ \textcolor{comment}{/**<\ Titkosítási\ algoritmus\ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00026}\doxymbox{\hyperlink{classEncryptedString_a7a3a3bab3ae583c91452196121300c14}{00026}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEncryptedString_a7a3a3bab3ae583c91452196121300c14}{reserve}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ newCap);}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00028}00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00029}00029\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00030}00030\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Konstruktor.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00033}\doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{00033}}\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptor}{Encryptor}}\&\ \doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}});}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00034}00034\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00035}00035\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Konstruktor\ C-\/stringből.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00038}\doxymbox{\hyperlink{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1}{00038}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_a78f1e8e81f460f38461c6de291bf1ba1}{EncryptedString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ text,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptor}{Encryptor}}\&\ \doxymbox{\hyperlink{classEncryptedString_a1c92ebddc8e851953d3216f886c283fd}{enc}});}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00039}00039\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00040}00040\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Másoló\ konstruktor.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00043}\doxymbox{\hyperlink{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e}{00043}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_ad6b6d7d9e77e5d065e826f87c7529a8e}{EncryptedString}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ other);}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00044}00044\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00045}00045\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Destruktor.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00048}\doxymbox{\hyperlink{classEncryptedString_a07cc336e52ccb1c13f3906fe1ad76540}{00048}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_a07cc336e52ccb1c13f3906fe1ad76540}{\string~EncryptedString}}();}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00049}00049\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00050}00050\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Értékadás\ operátor.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00053}\doxymbox{\hyperlink{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07}{00053}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ \doxymbox{\hyperlink{classEncryptedString_ae3c6d6e41c3e33b4968f77f4605cfc07}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ other);}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00054}00054\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00055}00055\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Indexelés.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00058}\doxymbox{\hyperlink{classEncryptedString_af4ea18aa259d7c67aa99b0402c828d95}{00058}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classEncryptedString_af4ea18aa259d7c67aa99b0402c828d95}{operator[]}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00059}00059\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00060}00060\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00061}00061\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Összefűzés.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00062}00062\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00063}\doxymbox{\hyperlink{classEncryptedString_a7642b32becafa537e114018057e04cf8}{00063}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\ \doxymbox{\hyperlink{classEncryptedString_a7642b32becafa537e114018057e04cf8}{operator+}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00064}00064\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00065}00065\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00066}00066\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Összefűzés\ és\ értékadás.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00067}00067\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00068}\doxymbox{\hyperlink{classEncryptedString_a65b3f943a863377081b62964be2da319}{00068}}\ \ \ \ \ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ \doxymbox{\hyperlink{classEncryptedString_a65b3f943a863377081b62964be2da319}{operator+=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ rhs);}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00069}00069\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00070}00070\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Összehasonlítás.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00073}\doxymbox{\hyperlink{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500}{00073}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classEncryptedString_aafa3180dbc8dbee5b120e21067c96500}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00075}\doxymbox{\hyperlink{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d}{00075}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classEncryptedString_afcc38e3e269e340403fbc00d456b3e8d}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString_aaffde4c16b85ec4d1cf36a385cf851c2}{EncryptedString}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00076}00076\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00077}00077\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00078}00078\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Karakter\ hozzáadása.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00079}00079\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00080}\doxymbox{\hyperlink{classEncryptedString_a58b943ea069028936b779e4f97eb4b3b}{00080}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEncryptedString_a58b943ea069028936b779e4f97eb4b3b}{push\_back}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00081}00081\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00082}00082\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Méret\ lekérdezése.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00085}\doxymbox{\hyperlink{classEncryptedString_a404cc08e11834c389d5850afcacf12e7}{00085}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEncryptedString_a404cc08e11834c389d5850afcacf12e7}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00086}00086\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00087}00087\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00088}00088\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ String\ törlése.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00090}\doxymbox{\hyperlink{classEncryptedString_a9ab2f1a0417fc5ff26bd139c677d7f65}{00090}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEncryptedString_a9ab2f1a0417fc5ff26bd139c677d7f65}{clear}}();}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00091}00091\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00092}00092\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Iterátor\ kezdete.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00095}\doxymbox{\hyperlink{classEncryptedString_aef690153f97c26e7fe413bb223acebd3}{00095}}\ \ \ \ \ \doxymbox{\hyperlink{classIterator}{Iterator}}\ \doxymbox{\hyperlink{classEncryptedString_aef690153f97c26e7fe413bb223acebd3}{begin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00096}00096\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00097}00097\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00098}00098\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Iterátor\ vége.}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00099}00099\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00100}\doxymbox{\hyperlink{classEncryptedString_acba958d3a367d0e450958a99b1613299}{00100}}\ \ \ \ \ \doxymbox{\hyperlink{classIterator}{Iterator}}\ \doxymbox{\hyperlink{classEncryptedString_acba958d3a367d0e450958a99b1613299}{end}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00101}00101\ \};}
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{encrypted__string_8h_source_l00103}00103\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

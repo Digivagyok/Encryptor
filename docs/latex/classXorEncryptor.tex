@@ -1,0 +1,179 @@
+\doxysection{Xor\+Encryptor Class Reference}
+\hypertarget{classXorEncryptor}{}\label{classXorEncryptor}\index{XorEncryptor@{XorEncryptor}}
+
+
+XOR műveleten alapuló titkosítási algoritmus.  
+
+
+
+
+{\ttfamily \+\#include $<$xor\+\_\+encryptor.\+h$>$}
+
+
+
+Inheritance diagram for Xor\+Encryptor:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classXorEncryptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Xor\+Encryptor:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classXorEncryptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classXorEncryptor_a30359b37236b79380ca2125a031754db}{Xor\+Encryptor}} (char \doxymbox{\hyperlink{classXorEncryptor_a297213891c13aaf9aa4ce16ec0563faf}{key}})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classXorEncryptor_ad8b5aadad03345eb055abe01c1b449bc}{encode}} (char c) const
+\begin{DoxyCompactList}\small\item\em Egy karakter titkosítása. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classXorEncryptor_a09093b0552ff041c34a1c0a3c6b995e0}{decode}} (char c) const
+\begin{DoxyCompactList}\small\item\em Egy karakter visszafejtése. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classXorEncryptor_aae8aa31529157faa44b0c93b40de85f1}{name}} () const
+\begin{DoxyCompactList}\small\item\em Az algoritmus nevének lekérdezése. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classEncryptor}{Encryptor}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{classEncryptor_af52e89ff451420227dbc9bbe44dcf9ee}{\texorpdfstring{$\sim$}{\string~}\+Encryptor}} ()
+\begin{DoxyCompactList}\small\item\em Virtuális destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \doxymbox{\hyperlink{classXorEncryptor_a297213891c13aaf9aa4ce16ec0563faf}{key}}
+\begin{DoxyCompactList}\small\item\em Titkosítási kulcs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+XOR műveleten alapuló titkosítási algoritmus. 
+
+Minden karaktert egy kulccsal XOR-\/ol. A művelet szimmetrikus, tehát encode és decode azonos. 
+
+Definition at line \doxymbox{\hyperlink{xor__encryptor_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{xor__encryptor_8h_source}{xor\+\_\+encryptor.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{classXorEncryptor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classXorEncryptor_a30359b37236b79380ca2125a031754db}\index{XorEncryptor@{XorEncryptor}!XorEncryptor@{XorEncryptor}}
+\index{XorEncryptor@{XorEncryptor}!XorEncryptor@{XorEncryptor}}
+\doxysubsubsection{\texorpdfstring{XorEncryptor()}{XorEncryptor()}}
+{\footnotesize\ttfamily \label{classXorEncryptor_a30359b37236b79380ca2125a031754db} 
+Xor\+Encryptor::\+\+Xor\+Encryptor (\begin{DoxyParamCaption}\item[{char}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classXorEncryptor_a297213891c13aaf9aa4ce16ec0563faf}{key}} & A titkosítási kulcs. \\
+\hline
+\end{DoxyParams}
+
+
+References \doxymbox{\hyperlink{xor__encryptor_8h_source_l00020}{key}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{classXorEncryptor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classXorEncryptor_a09093b0552ff041c34a1c0a3c6b995e0}\index{XorEncryptor@{XorEncryptor}!decode@{decode}}
+\index{decode@{decode}!XorEncryptor@{XorEncryptor}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{classXorEncryptor_a09093b0552ff041c34a1c0a3c6b995e0} 
+char Xor\+Encryptor::\+decode (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Egy karakter visszafejtése. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & A visszafejtendő karakter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dekódolt karakter. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a5b303b9648d0a9fb88a5d0e510a1b22d}{Encryptor}}.
+
+\Hypertarget{classXorEncryptor_ad8b5aadad03345eb055abe01c1b449bc}\index{XorEncryptor@{XorEncryptor}!encode@{encode}}
+\index{encode@{encode}!XorEncryptor@{XorEncryptor}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{classXorEncryptor_ad8b5aadad03345eb055abe01c1b449bc} 
+char Xor\+Encryptor::\+encode (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Egy karakter titkosítása. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & A titkosítandó karakter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A titkosított karakter. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a5d2b2c905e12debeab5f4826c7ae4dea}{Encryptor}}.
+
+\Hypertarget{classXorEncryptor_aae8aa31529157faa44b0c93b40de85f1}\index{XorEncryptor@{XorEncryptor}!name@{name}}
+\index{name@{name}!XorEncryptor@{XorEncryptor}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classXorEncryptor_aae8aa31529157faa44b0c93b40de85f1} 
+const char \texorpdfstring{$\ast$}{*} Xor\+Encryptor::\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Az algoritmus nevének lekérdezése. 
+
+\begin{DoxyReturn}{Returns}
+Az algoritmus neve. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{classEncryptor_a13a730b0a7c85f4cf00db78781f507b5}{Encryptor}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classXorEncryptor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classXorEncryptor_a297213891c13aaf9aa4ce16ec0563faf}\index{XorEncryptor@{XorEncryptor}!key@{key}}
+\index{key@{key}!XorEncryptor@{XorEncryptor}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily \label{classXorEncryptor_a297213891c13aaf9aa4ce16ec0563faf} 
+char Xor\+Encryptor::\+key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Titkosítási kulcs. 
+
+
+
+Definition at line \doxymbox{\hyperlink{xor__encryptor_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{xor__encryptor_8h_source}{xor\+\_\+encryptor.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classXorEncryptor_a30359b37236b79380ca2125a031754db}{Xor\+Encryptor()}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{xor__encryptor_8h}{xor\+\_\+encryptor.\+h}}\end{DoxyCompactItemize}

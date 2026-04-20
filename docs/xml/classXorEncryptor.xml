@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classXorEncryptor" kind="class" language="C++" prot="public">
+    <compoundname>XorEncryptor</compoundname>
+    <basecompoundref refid="classEncryptor" prot="public" virt="non-virtual">Encryptor</basecompoundref>
+    <includes refid="xor__encryptor_8h" local="no">xor_encryptor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char XorEncryptor::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>XorEncryptor::key</qualifiedname>
+        <briefdescription>
+<para>Titkosítási kulcs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xor_encryptor.h" line="20" column="10" bodyfile="xor_encryptor.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db">XorEncryptor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXorEncryptor_1a30359b37236b79380ca2125a031754db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>XorEncryptor::XorEncryptor</definition>
+        <argsstring>(char key)</argsstring>
+        <name>XorEncryptor</name>
+        <qualifiedname>XorEncryptor::XorEncryptor</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" kindref="member">key</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A titkosítási kulcs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xor_encryptor.h" line="28" column="14"/>
+        <references refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" compoundref="xor__encryptor_8h" startline="20">key</references>
+      </memberdef>
+      <memberdef kind="function" id="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>char</type>
+        <definition>char XorEncryptor::encode</definition>
+        <argsstring>(char c) const</argsstring>
+        <name>encode</name>
+        <qualifiedname>XorEncryptor::encode</qualifiedname>
+        <reimplements refid="classEncryptor_1a5d2b2c905e12debeab5f4826c7ae4dea">encode</reimplements>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter titkosítása. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A titkosítandó karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A titkosított karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xor_encryptor.h" line="30" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>char</type>
+        <definition>char XorEncryptor::decode</definition>
+        <argsstring>(char c) const</argsstring>
+        <name>decode</name>
+        <qualifiedname>XorEncryptor::decode</qualifiedname>
+        <reimplements refid="classEncryptor_1a5b303b9648d0a9fb88a5d0e510a1b22d">decode</reimplements>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter visszafejtése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A visszafejtendő karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A dekódolt karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xor_encryptor.h" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * XorEncryptor::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>XorEncryptor::name</qualifiedname>
+        <reimplements refid="classEncryptor_1a13a730b0a7c85f4cf00db78781f507b5">name</reimplements>
+        <briefdescription>
+<para>Az algoritmus nevének lekérdezése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Az algoritmus neve. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xor_encryptor.h" line="32" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>XOR műveleten alapuló titkosítási algoritmus. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Minden karaktert egy kulccsal XOR-ol. A művelet szimmetrikus, tehát encode és decode azonos. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+      <node id="1">
+        <label>XorEncryptor</label>
+        <link refid="classXorEncryptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+      <node id="1">
+        <label>XorEncryptor</label>
+        <link refid="classXorEncryptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="xor_encryptor.h" line="18" column="1" bodyfile="xor_encryptor.h" bodystart="18" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0" prot="public" virt="virtual"><scope>XorEncryptor</scope><name>decode</name></member>
+      <member refid="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc" prot="public" virt="virtual"><scope>XorEncryptor</scope><name>encode</name></member>
+      <member refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" prot="private" virt="non-virtual"><scope>XorEncryptor</scope><name>key</name></member>
+      <member refid="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1" prot="public" virt="virtual"><scope>XorEncryptor</scope><name>name</name></member>
+      <member refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db" prot="public" virt="non-virtual"><scope>XorEncryptor</scope><name>XorEncryptor</name></member>
+      <member refid="classEncryptor_1af52e89ff451420227dbc9bbe44dcf9ee" prot="public" virt="virtual"><scope>XorEncryptor</scope><name>~Encryptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

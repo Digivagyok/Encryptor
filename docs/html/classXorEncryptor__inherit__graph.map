@@ -1,0 +1,5 @@
+<map id="XorEncryptor" name="XorEncryptor">
+<area shape="rect" id="Node000001" title="XOR műveleten alapuló titkosítási algoritmus." alt="" coords="5,175,113,296"/>
+<area shape="rect" id="Node000002" href="$classEncryptor.html" title="Absztrakt ősosztály a karakterenként működő titkosítási algoritmusokhoz." alt="" coords="11,5,108,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,139,62,175,57,175,59,144"/>
+</map>

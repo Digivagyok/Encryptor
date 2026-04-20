@@ -1,0 +1,72 @@
+# Doxygen konfigurációs fájl (Doxyfile minta)
+# Minimálisan szükséges beállítások NHF-hez + UML diagramokhoz
+
+# Projekt adatok
+PROJECT_NAME           = "EncryptedString Project"
+PROJECT_BRIEF          = "Titkosított szövegkezelő rendszer"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+# Bemeneti fájlok
+INPUT                  = .
+FILE_PATTERNS          = *.h *.hpp *.cpp
+RECURSIVE              = YES
+
+# Kimenet formátuma
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES   # PDF generáláshoz hasznos
+GENERATE_XML           = YES
+
+# Dokumentáció forrása
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Komment stílus
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = YES
+
+# Diagramok (nagyon fontos!)
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 2
+
+# UML / class diagram
+CLASS_DIAGRAMS         = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 50
+
+# Kapcsolati diagramok
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Include és dependency diagramok
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+DIRECTORY_GRAPH        = YES
+
+# DOT finomhangolás
+DOT_IMAGE_FORMAT       = png
+DOT_TRANSPARENT        = YES
+DOT_MULTI_TARGETS      = YES
+
+# Forráskód megjelenítés
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+# Figyelmeztetések
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+# Latex (PDF generáláshoz)
+LATEX_OUTPUT           = latex
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = YES
+GENERATE_TREEVIEW      = YES
+
+# Egyéb
+QUIET                  = NO

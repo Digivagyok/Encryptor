@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classArgumentParser" kind="class" language="C++" prot="public">
+    <compoundname>ArgumentParser</compoundname>
+    <includes refid="argument__parser_8h" local="no">argument_parser.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classArgumentParser_1a8fb7fa834d7a74d6e776a59e35555a1e" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ArgumentParser::algorithm</definition>
+        <argsstring></argsstring>
+        <name>algorithm</name>
+        <qualifiedname>ArgumentParser::algorithm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="15" column="16" bodyfile="argument_parser.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArgumentParser_1a06faec96520cd124bf41160727939588" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ArgumentParser::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <qualifiedname>ArgumentParser::input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="16" column="16" bodyfile="argument_parser.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArgumentParser_1a9af23d21cb5edef53492247567626e0f" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ArgumentParser::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <qualifiedname>ArgumentParser::output</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="17" column="16" bodyfile="argument_parser.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArgumentParser_1a9f6bbaaf5445745b23368bbf050920de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ArgumentParser::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>ArgumentParser::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="18" column="9" bodyfile="argument_parser.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArgumentParser_1abedc7c02b543e81d063f857c44c17c0c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ArgumentParser::help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <qualifiedname>ArgumentParser::help</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="19" column="10" bodyfile="argument_parser.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArgumentParser::ArgumentParser</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>ArgumentParser</name>
+        <qualifiedname>ArgumentParser::ArgumentParser</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classArgumentParser_1a42d9b05b33dc1b98c581590781be7b38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ArgumentParser::getAlgorithm</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlgorithm</name>
+        <qualifiedname>ArgumentParser::getAlgorithm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="24" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classArgumentParser_1ab3597a2ad29893c8b67c3bdae29124d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ArgumentParser::getInput</definition>
+        <argsstring>() const</argsstring>
+        <name>getInput</name>
+        <qualifiedname>ArgumentParser::getInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="25" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classArgumentParser_1a4e8fa824715e75e95ff981680cfc94a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ArgumentParser::getOutput</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutput</name>
+        <qualifiedname>ArgumentParser::getOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="26" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classArgumentParser_1ad918bbb3a4c4a064abcdff3029ae15a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ArgumentParser::getKey</definition>
+        <argsstring>() const</argsstring>
+        <name>getKey</name>
+        <qualifiedname>ArgumentParser::getKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classArgumentParser_1a7d802960cab1a141c88e5617e0e2e0c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArgumentParser::isHelp</definition>
+        <argsstring>() const</argsstring>
+        <name>isHelp</name>
+        <qualifiedname>ArgumentParser::isHelp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="argument_parser.h" line="28" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>CLI argumentumok feldolgozásáért felel. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ArgumentParser</label>
+        <link refid="classArgumentParser"/>
+      </node>
+    </collaborationgraph>
+    <location file="argument_parser.h" line="13" column="1" bodyfile="argument_parser.h" bodystart="13" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classArgumentParser_1a8fb7fa834d7a74d6e776a59e35555a1e" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>algorithm</name></member>
+      <member refid="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>ArgumentParser</name></member>
+      <member refid="classArgumentParser_1a42d9b05b33dc1b98c581590781be7b38" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>getAlgorithm</name></member>
+      <member refid="classArgumentParser_1ab3597a2ad29893c8b67c3bdae29124d4" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>getInput</name></member>
+      <member refid="classArgumentParser_1ad918bbb3a4c4a064abcdff3029ae15a1" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>getKey</name></member>
+      <member refid="classArgumentParser_1a4e8fa824715e75e95ff981680cfc94a1" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>getOutput</name></member>
+      <member refid="classArgumentParser_1abedc7c02b543e81d063f857c44c17c0c" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>help</name></member>
+      <member refid="classArgumentParser_1a06faec96520cd124bf41160727939588" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>input</name></member>
+      <member refid="classArgumentParser_1a7d802960cab1a141c88e5617e0e2e0c0" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>isHelp</name></member>
+      <member refid="classArgumentParser_1a9f6bbaaf5445745b23368bbf050920de" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>key</name></member>
+      <member refid="classArgumentParser_1a9af23d21cb5edef53492247567626e0f" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>output</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

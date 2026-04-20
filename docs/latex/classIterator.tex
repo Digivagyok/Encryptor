@@ -1,0 +1,197 @@
+\doxysection{Iterator Class Reference}
+\hypertarget{classIterator}{}\label{classIterator}\index{Iterator@{Iterator}}
+
+
+Iterátor az \doxylink{classEncryptedString}{Encrypted\+String} bejárásához.  
+
+
+
+
+{\ttfamily \+\#include $<$iterator.\+h$>$}
+
+
+
+Collaboration diagram for Iterator:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classIterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator}} (const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{classIterator_a7d218db692389136fecf8aa72c740ce4}{owner}}, unsigned int \doxymbox{\hyperlink{classIterator_adf026305484f737317bf76acbe689bad}{index}})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{classIterator_af62cf8c1a8bcdc347deeba1e3ca3b3ac}{operator\texorpdfstring{$\ast$}{*}}} () const
+\begin{DoxyCompactList}\small\item\em Dereferálás. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classIterator}{Iterator}} \& \doxymbox{\hyperlink{classIterator_a091c7cf45883f9196ebcda0ad97b59f8}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Prefix növelés. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classIterator_a8da8dfec94f64cac107415cafdf657e8}{operator!=}} (const \doxymbox{\hyperlink{classIterator}{Iterator}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Összehasonlítás. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classIterator_a7d218db692389136fecf8aa72c740ce4}{owner}}
+\begin{DoxyCompactList}\small\item\em Tulajdonos string. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{classIterator_adf026305484f737317bf76acbe689bad}{index}}
+\begin{DoxyCompactList}\small\item\em Aktuális pozíció \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterátor az \doxylink{classEncryptedString}{Encrypted\+String} bejárásához. 
+
+A dekódolt karaktereken iterál végig. 
+
+Definition at line \doxymbox{\hyperlink{iterator_8h_source_l00017}{17}} of file \doxymbox{\hyperlink{iterator_8h_source}{iterator.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{classIterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIterator_a1ec1f269e4dce01124bd8c49922341b2}\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily \label{classIterator_a1ec1f269e4dce01124bd8c49922341b2} 
+Iterator::\+\+Iterator (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}} \texorpdfstring{$\ast$}{*}}]{owner}{, }\item[{unsigned int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classIterator_a7d218db692389136fecf8aa72c740ce4}{owner}} & A string, amin iterálunk. \\
+\hline
+{\em \doxylink{classIterator_adf026305484f737317bf76acbe689bad}{index}} & Kezdő index. \\
+\hline
+\end{DoxyParams}
+
+
+References \doxymbox{\hyperlink{iterator_8h_source_l00020}{index}}, and \doxymbox{\hyperlink{iterator_8h_source_l00019}{owner}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classIterator_a8da8dfec94f64cac107415cafdf657e8}{operator!=()}}, and \doxymbox{\hyperlink{classIterator_a091c7cf45883f9196ebcda0ad97b59f8}{operator++()}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classIterator_a1ec1f269e4dce01124bd8c49922341b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classIterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIterator_a8da8dfec94f64cac107415cafdf657e8}\index{Iterator@{Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classIterator_a8da8dfec94f64cac107415cafdf657e8} 
+bool Iterator::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classIterator}{Iterator}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+Összehasonlítás. 
+
+
+
+References \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classIterator_a8da8dfec94f64cac107415cafdf657e8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classIterator_af62cf8c1a8bcdc347deeba1e3ca3b3ac}\index{Iterator@{Iterator}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{classIterator_af62cf8c1a8bcdc347deeba1e3ca3b3ac} 
+char Iterator::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Dereferálás. 
+
+\begin{DoxyReturn}{Returns}
+Az aktuális karakter (dekódolva). 
+\end{DoxyReturn}
+\Hypertarget{classIterator_a091c7cf45883f9196ebcda0ad97b59f8}\index{Iterator@{Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \label{classIterator_a091c7cf45883f9196ebcda0ad97b59f8} 
+\doxymbox{\hyperlink{classIterator}{Iterator}} \& Iterator::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prefix növelés. 
+
+\begin{DoxyReturn}{Returns}
+Az iterátor referenciája. 
+\end{DoxyReturn}
+
+
+References \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator()}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classIterator_a091c7cf45883f9196ebcda0ad97b59f8_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classIterator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classIterator_adf026305484f737317bf76acbe689bad}\index{Iterator@{Iterator}!index@{index}}
+\index{index@{index}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \label{classIterator_adf026305484f737317bf76acbe689bad} 
+unsigned int Iterator::\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktuális pozíció 
+
+
+
+Definition at line \doxymbox{\hyperlink{iterator_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{iterator_8h_source}{iterator.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator()}}.
+
+\Hypertarget{classIterator_a7d218db692389136fecf8aa72c740ce4}\index{Iterator@{Iterator}!owner@{owner}}
+\index{owner@{owner}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{owner}{owner}}
+{\footnotesize\ttfamily \label{classIterator_a7d218db692389136fecf8aa72c740ce4} 
+const \doxymbox{\hyperlink{classEncryptedString}{Encrypted\+String}}\texorpdfstring{$\ast$}{*} Iterator::\+owner\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tulajdonos string. 
+
+
+
+Definition at line \doxymbox{\hyperlink{iterator_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{iterator_8h_source}{iterator.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator()}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{iterator_8h}{iterator.\+h}}\end{DoxyCompactItemize}

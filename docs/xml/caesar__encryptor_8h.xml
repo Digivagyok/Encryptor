@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="caesar__encryptor_8h" kind="file" language="C++">
+    <compoundname>caesar_encryptor.h</compoundname>
+    <includes refid="encryptor_8h" local="yes">encryptor.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>caesar_encryptor.h</label>
+        <link refid="caesar__encryptor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>encryptor.h</label>
+        <link refid="encryptor_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCaesarEncryptor" prot="public">CaesarEncryptor</innerclass>
+    <briefdescription>
+<para>Caesar-féle karaktereltolás implementációja. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CAESAR_ENCRYPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAESAR_ENCRYPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="encryptor_8h" kindref="compound">encryptor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>@file<sp/>caesar_encryptor.h</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Caesar-féle<sp/>karaktereltolás<sp/>implementációja.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>@class<sp/>CaesarEncryptor</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Karaktereltoláson<sp/>alapuló<sp/>titkosítás.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>A<sp/>karaktereket<sp/>egy<sp/>adott<sp/>értékkel<sp/>eltolja<sp/>az<sp/>ASCII<sp/>tartományon<sp/>belül.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classCaesarEncryptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" kindref="member">CaesarEncryptor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classEncryptor" kindref="compound">Encryptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" kindref="member">shift</ref>;<sp/></highlight><highlight class="comment">/**&lt;<sp/>Eltolás<sp/>mértéke<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Konstruktor.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>shift<sp/>Az<sp/>eltolás<sp/>mértéke.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" kindref="member">CaesarEncryptor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" kindref="member">shift</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913" kindref="member">encode</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30" refid="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff" kindref="member">decode</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31" refid="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56" kindref="member">name</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="caesar_encryptor.h"/>
+  </compounddef>
+</doxygen>

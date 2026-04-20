@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classCaesarEncryptor" kind="class" language="C++" prot="public">
+    <compoundname>CaesarEncryptor</compoundname>
+    <basecompoundref refid="classEncryptor" prot="public" virt="non-virtual">Encryptor</basecompoundref>
+    <includes refid="caesar__encryptor_8h" local="no">caesar_encryptor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CaesarEncryptor::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <qualifiedname>CaesarEncryptor::shift</qualifiedname>
+        <briefdescription>
+<para>Eltolás mértéke. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="caesar_encryptor.h" line="19" column="9" bodyfile="caesar_encryptor.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f">CaesarEncryptor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CaesarEncryptor::CaesarEncryptor</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>CaesarEncryptor</name>
+        <qualifiedname>CaesarEncryptor::CaesarEncryptor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" kindref="member">shift</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Az eltolás mértéke. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="caesar_encryptor.h" line="27" column="14"/>
+        <references refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" compoundref="caesar__encryptor_8h" startline="19">shift</references>
+      </memberdef>
+      <memberdef kind="function" id="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>char</type>
+        <definition>char CaesarEncryptor::encode</definition>
+        <argsstring>(char c) const</argsstring>
+        <name>encode</name>
+        <qualifiedname>CaesarEncryptor::encode</qualifiedname>
+        <reimplements refid="classEncryptor_1a5d2b2c905e12debeab5f4826c7ae4dea">encode</reimplements>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter titkosítása. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A titkosítandó karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A titkosított karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="caesar_encryptor.h" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>char</type>
+        <definition>char CaesarEncryptor::decode</definition>
+        <argsstring>(char c) const</argsstring>
+        <name>decode</name>
+        <qualifiedname>CaesarEncryptor::decode</qualifiedname>
+        <reimplements refid="classEncryptor_1a5b303b9648d0a9fb88a5d0e510a1b22d">decode</reimplements>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Egy karakter visszafejtése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A visszafejtendő karakter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A dekódolt karakter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="caesar_encryptor.h" line="30" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * CaesarEncryptor::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>CaesarEncryptor::name</qualifiedname>
+        <reimplements refid="classEncryptor_1a13a730b0a7c85f4cf00db78781f507b5">name</reimplements>
+        <briefdescription>
+<para>Az algoritmus nevének lekérdezése. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Az algoritmus neve. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="caesar_encryptor.h" line="31" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Karaktereltoláson alapuló titkosítás. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A karaktereket egy adott értékkel eltolja az ASCII tartományon belül. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CaesarEncryptor</label>
+        <link refid="classCaesarEncryptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CaesarEncryptor</label>
+        <link refid="classCaesarEncryptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Encryptor</label>
+        <link refid="classEncryptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="caesar_encryptor.h" line="17" column="1" bodyfile="caesar_encryptor.h" bodystart="17" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" prot="public" virt="non-virtual"><scope>CaesarEncryptor</scope><name>CaesarEncryptor</name></member>
+      <member refid="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff" prot="public" virt="virtual"><scope>CaesarEncryptor</scope><name>decode</name></member>
+      <member refid="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913" prot="public" virt="virtual"><scope>CaesarEncryptor</scope><name>encode</name></member>
+      <member refid="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56" prot="public" virt="virtual"><scope>CaesarEncryptor</scope><name>name</name></member>
+      <member refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" prot="private" virt="non-virtual"><scope>CaesarEncryptor</scope><name>shift</name></member>
+      <member refid="classEncryptor_1af52e89ff451420227dbc9bbe44dcf9ee" prot="public" virt="virtual"><scope>CaesarEncryptor</scope><name>~Encryptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="classArgumentParser" kind="class"><name>ArgumentParser</name>
+    <member refid="classArgumentParser_1a8fb7fa834d7a74d6e776a59e35555a1e" kind="variable"><name>algorithm</name></member>
+    <member refid="classArgumentParser_1a06faec96520cd124bf41160727939588" kind="variable"><name>input</name></member>
+    <member refid="classArgumentParser_1a9af23d21cb5edef53492247567626e0f" kind="variable"><name>output</name></member>
+    <member refid="classArgumentParser_1a9f6bbaaf5445745b23368bbf050920de" kind="variable"><name>key</name></member>
+    <member refid="classArgumentParser_1abedc7c02b543e81d063f857c44c17c0c" kind="variable"><name>help</name></member>
+    <member refid="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" kind="function"><name>ArgumentParser</name></member>
+    <member refid="classArgumentParser_1a42d9b05b33dc1b98c581590781be7b38" kind="function"><name>getAlgorithm</name></member>
+    <member refid="classArgumentParser_1ab3597a2ad29893c8b67c3bdae29124d4" kind="function"><name>getInput</name></member>
+    <member refid="classArgumentParser_1a4e8fa824715e75e95ff981680cfc94a1" kind="function"><name>getOutput</name></member>
+    <member refid="classArgumentParser_1ad918bbb3a4c4a064abcdff3029ae15a1" kind="function"><name>getKey</name></member>
+    <member refid="classArgumentParser_1a7d802960cab1a141c88e5617e0e2e0c0" kind="function"><name>isHelp</name></member>
+  </compound>
+  <compound refid="classCaesarEncryptor" kind="class"><name>CaesarEncryptor</name>
+    <member refid="classCaesarEncryptor_1ab6eda501440152f48da3f5af447e983a" kind="variable"><name>shift</name></member>
+    <member refid="classCaesarEncryptor_1a3f63209ec17bdb1106659be4cf4b492f" kind="function"><name>CaesarEncryptor</name></member>
+    <member refid="classCaesarEncryptor_1a22fb6b4319595f08fb517741213cb913" kind="function"><name>encode</name></member>
+    <member refid="classCaesarEncryptor_1a8b2e70d3a94051149bbe46b2e6b64dff" kind="function"><name>decode</name></member>
+    <member refid="classCaesarEncryptor_1af1885fe2eea2335106af78417d743e56" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="classEncryptedString" kind="class"><name>EncryptedString</name>
+    <member refid="classEncryptedString_1a5a0694b44a8013330e49253202a8a571" kind="variable"><name>data</name></member>
+    <member refid="classEncryptedString_1ad20fe361698e9886a2b69482d194169d" kind="variable"><name>length</name></member>
+    <member refid="classEncryptedString_1a10b04678f1e17c2f433fdb6130bb7342" kind="variable"><name>capacity</name></member>
+    <member refid="classEncryptedString_1a1c92ebddc8e851953d3216f886c283fd" kind="variable"><name>enc</name></member>
+    <member refid="classEncryptedString_1a7a3a3bab3ae583c91452196121300c14" kind="function"><name>reserve</name></member>
+    <member refid="classEncryptedString_1aaffde4c16b85ec4d1cf36a385cf851c2" kind="function"><name>EncryptedString</name></member>
+    <member refid="classEncryptedString_1a78f1e8e81f460f38461c6de291bf1ba1" kind="function"><name>EncryptedString</name></member>
+    <member refid="classEncryptedString_1ad6b6d7d9e77e5d065e826f87c7529a8e" kind="function"><name>EncryptedString</name></member>
+    <member refid="classEncryptedString_1a07cc336e52ccb1c13f3906fe1ad76540" kind="function"><name>~EncryptedString</name></member>
+    <member refid="classEncryptedString_1ae3c6d6e41c3e33b4968f77f4605cfc07" kind="function"><name>operator=</name></member>
+    <member refid="classEncryptedString_1af4ea18aa259d7c67aa99b0402c828d95" kind="function"><name>operator[]</name></member>
+    <member refid="classEncryptedString_1a7642b32becafa537e114018057e04cf8" kind="function"><name>operator+</name></member>
+    <member refid="classEncryptedString_1a65b3f943a863377081b62964be2da319" kind="function"><name>operator+=</name></member>
+    <member refid="classEncryptedString_1aafa3180dbc8dbee5b120e21067c96500" kind="function"><name>operator==</name></member>
+    <member refid="classEncryptedString_1afcc38e3e269e340403fbc00d456b3e8d" kind="function"><name>operator!=</name></member>
+    <member refid="classEncryptedString_1a58b943ea069028936b779e4f97eb4b3b" kind="function"><name>push_back</name></member>
+    <member refid="classEncryptedString_1a404cc08e11834c389d5850afcacf12e7" kind="function"><name>size</name></member>
+    <member refid="classEncryptedString_1a9ab2f1a0417fc5ff26bd139c677d7f65" kind="function"><name>clear</name></member>
+    <member refid="classEncryptedString_1aef690153f97c26e7fe413bb223acebd3" kind="function"><name>begin</name></member>
+    <member refid="classEncryptedString_1acba958d3a367d0e450958a99b1613299" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="classEncryptor" kind="class"><name>Encryptor</name>
+    <member refid="classEncryptor_1a5d2b2c905e12debeab5f4826c7ae4dea" kind="function"><name>encode</name></member>
+    <member refid="classEncryptor_1a5b303b9648d0a9fb88a5d0e510a1b22d" kind="function"><name>decode</name></member>
+    <member refid="classEncryptor_1a13a730b0a7c85f4cf00db78781f507b5" kind="function"><name>name</name></member>
+    <member refid="classEncryptor_1af52e89ff451420227dbc9bbe44dcf9ee" kind="function"><name>~Encryptor</name></member>
+  </compound>
+  <compound refid="classFileHandler" kind="class"><name>FileHandler</name>
+    <member refid="classFileHandler_1aebd552a52b6e36f1efba0cf8a0678d3a" kind="function"><name>readAll</name></member>
+    <member refid="classFileHandler_1ad712b78add5e6ac4b9219b92f3638c70" kind="function"><name>writeAll</name></member>
+  </compound>
+  <compound refid="classIterator" kind="class"><name>Iterator</name>
+    <member refid="classIterator_1a7d218db692389136fecf8aa72c740ce4" kind="variable"><name>owner</name></member>
+    <member refid="classIterator_1adf026305484f737317bf76acbe689bad" kind="variable"><name>index</name></member>
+    <member refid="classIterator_1a1ec1f269e4dce01124bd8c49922341b2" kind="function"><name>Iterator</name></member>
+    <member refid="classIterator_1af62cf8c1a8bcdc347deeba1e3ca3b3ac" kind="function"><name>operator*</name></member>
+    <member refid="classIterator_1a091c7cf45883f9196ebcda0ad97b59f8" kind="function"><name>operator++</name></member>
+    <member refid="classIterator_1a8da8dfec94f64cac107415cafdf657e8" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classXorEncryptor" kind="class"><name>XorEncryptor</name>
+    <member refid="classXorEncryptor_1a297213891c13aaf9aa4ce16ec0563faf" kind="variable"><name>key</name></member>
+    <member refid="classXorEncryptor_1a30359b37236b79380ca2125a031754db" kind="function"><name>XorEncryptor</name></member>
+    <member refid="classXorEncryptor_1ad8b5aadad03345eb055abe01c1b449bc" kind="function"><name>encode</name></member>
+    <member refid="classXorEncryptor_1a09093b0552ff041c34a1c0a3c6b995e0" kind="function"><name>decode</name></member>
+    <member refid="classXorEncryptor_1aae8aa31529157faa44b0c93b40de85f1" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="argument__parser_8h" kind="file"><name>argument_parser.h</name>
+  </compound>
+  <compound refid="caesar__encryptor_8h" kind="file"><name>caesar_encryptor.h</name>
+  </compound>
+  <compound refid="encrypted__string_8h" kind="file"><name>encrypted_string.h</name>
+  </compound>
+  <compound refid="encryptor_8h" kind="file"><name>encryptor.h</name>
+  </compound>
+  <compound refid="file__handler_8h" kind="file"><name>file_handler.h</name>
+  </compound>
+  <compound refid="iterator_8h" kind="file"><name>iterator.h</name>
+  </compound>
+  <compound refid="xor__encryptor_8h" kind="file"><name>xor_encryptor.h</name>
+  </compound>
+</doxygenindex>

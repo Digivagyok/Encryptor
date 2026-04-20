@@ -1,0 +1,50 @@
+\doxysection{encryptor.\+h}
+\hypertarget{encryptor_8h_source}{}\label{encryptor_8h_source}\doxymbox{\hyperlink{encryptor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENCRYPTOR\_H}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENCRYPTOR\_H}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00005}00005\ \textcolor{comment}{\ *\ @file\ encryptor.h}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00006}00006\ \textcolor{comment}{\ *\ @brief\ Absztrakt\ interfész\ a\ titkosítási\ algoritmusok\ számára.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00007}00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00008}00008\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00009}00009\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00010}00010\ \textcolor{comment}{\ *\ @class\ Encryptor}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00011}00011\ \textcolor{comment}{\ *\ @brief\ Absztrakt\ ősosztály\ a\ karakterenként\ működő\ titkosítási\ algoritmusokhoz.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00012}00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00013}00013\ \textcolor{comment}{\ *\ Az\ osztály\ egységes\ interfészt\ biztosít\ különböző\ titkosítási}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00014}00014\ \textcolor{comment}{\ *\ algoritmusok\ számára.\ A\ konkrét\ algoritmusok\ ebből\ az\ osztályból\ származnak.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00015}00015\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00016}\doxymbox{\hyperlink{classEncryptor}{00016}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classEncryptor}{Encryptor}}\ \{}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00017}00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00019}00019\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Egy\ karakter\ titkosítása.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ @param\ c\ A\ titkosítandó\ karakter.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ @return\ A\ titkosított\ karakter.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00024}\doxymbox{\hyperlink{classEncryptor_a5d2b2c905e12debeab5f4826c7ae4dea}{00024}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classEncryptor_a5d2b2c905e12debeab5f4826c7ae4dea}{encode}}(\textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00025}00025\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Egy\ karakter\ visszafejtése.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ @param\ c\ A\ visszafejtendő\ karakter.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ @return\ A\ dekódolt\ karakter.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00031}\doxymbox{\hyperlink{classEncryptor_a5b303b9648d0a9fb88a5d0e510a1b22d}{00031}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classEncryptor_a5b303b9648d0a9fb88a5d0e510a1b22d}{decode}}(\textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00032}00032\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00033}00033\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Az\ algoritmus\ nevének\ lekérdezése.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ @return\ Az\ algoritmus\ neve.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00037}\doxymbox{\hyperlink{classEncryptor_a13a730b0a7c85f4cf00db78781f507b5}{00037}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classEncryptor_a13a730b0a7c85f4cf00db78781f507b5}{name}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00038}00038\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00039}00039\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Virtuális\ destruktor.}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00042}\doxymbox{\hyperlink{classEncryptor_af52e89ff451420227dbc9bbe44dcf9ee}{00042}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{classEncryptor_af52e89ff451420227dbc9bbe44dcf9ee}{\string~Encryptor}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00043}00043\ \};}
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{encryptor_8h_source_l00045}00045\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="argument__parser_8h" kind="file" language="C++">
+    <compoundname>argument_parser.h</compoundname>
+    <innerclass refid="classArgumentParser" prot="public">ArgumentParser</innerclass>
+    <briefdescription>
+<para>Parancssori argumentum feldolgozó. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ARGUMENT_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARGUMENT_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>@file<sp/>argument_parser.h</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Parancssori<sp/>argumentum<sp/>feldolgozó.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>@class<sp/>ArgumentParser</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>@brief<sp/>CLI<sp/>argumentumok<sp/>feldolgozásáért<sp/>felel.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classArgumentParser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" kindref="member">ArgumentParser</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classArgumentParser_1a8fb7fa834d7a74d6e776a59e35555a1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1a8fb7fa834d7a74d6e776a59e35555a1e" kindref="member">algorithm</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classArgumentParser_1a06faec96520cd124bf41160727939588" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1a06faec96520cd124bf41160727939588" kindref="member">input</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classArgumentParser_1a9af23d21cb5edef53492247567626e0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1a9af23d21cb5edef53492247567626e0f" kindref="member">output</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classArgumentParser_1a9f6bbaaf5445745b23368bbf050920de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classArgumentParser_1a9f6bbaaf5445745b23368bbf050920de" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classArgumentParser_1abedc7c02b543e81d063f857c44c17c0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classArgumentParser_1abedc7c02b543e81d063f857c44c17c0c" kindref="member">help</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classArgumentParser_1a760403f063ce0bc16b35c7f5d4e84c04" kindref="member">ArgumentParser</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classArgumentParser_1a42d9b05b33dc1b98c581590781be7b38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1a42d9b05b33dc1b98c581590781be7b38" kindref="member">getAlgorithm</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25" refid="classArgumentParser_1ab3597a2ad29893c8b67c3bdae29124d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1ab3597a2ad29893c8b67c3bdae29124d4" kindref="member">getInput</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="classArgumentParser_1a4e8fa824715e75e95ff981680cfc94a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classArgumentParser_1a4e8fa824715e75e95ff981680cfc94a1" kindref="member">getOutput</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27" refid="classArgumentParser_1ad918bbb3a4c4a064abcdff3029ae15a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classArgumentParser_1ad918bbb3a4c4a064abcdff3029ae15a1" kindref="member">getKey</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28" refid="classArgumentParser_1a7d802960cab1a141c88e5617e0e2e0c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classArgumentParser_1a7d802960cab1a141c88e5617e0e2e0c0" kindref="member">isHelp</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="argument_parser.h"/>
+  </compounddef>
+</doxygen>

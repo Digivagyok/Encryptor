@@ -1,0 +1,54 @@
+\doxysection{iterator.\+h}
+\hypertarget{iterator_8h_source}{}\label{iterator_8h_source}\doxymbox{\hyperlink{iterator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ITERATOR\_H}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ITERATOR\_H}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00005}00005\ \textcolor{comment}{\ *\ @file\ iterator.h}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00006}00006\ \textcolor{comment}{\ *\ @brief\ Iterátor\ deklaráció\ a\ titkosított\ stringhez.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00007}00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00009}00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classEncryptedString}{EncryptedString}};}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00011}00011\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00012}00012\ \textcolor{comment}{\ *\ @class\ Iterator}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00013}00013\ \textcolor{comment}{\ *\ @brief\ Iterátor\ az\ EncryptedString\ bejárásához.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00014}00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00015}00015\ \textcolor{comment}{\ *\ A\ dekódolt\ karaktereken\ iterál\ végig.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00016}00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00017}\doxymbox{\hyperlink{classIterator}{00017}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator}}\ \{}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00018}00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00019}\doxymbox{\hyperlink{classIterator_a7d218db692389136fecf8aa72c740ce4}{00019}}\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString}{EncryptedString}}*\ \doxymbox{\hyperlink{classIterator_a7d218db692389136fecf8aa72c740ce4}{owner}};\ \textcolor{comment}{/**<\ Tulajdonos\ string\ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00020}\doxymbox{\hyperlink{classIterator_adf026305484f737317bf76acbe689bad}{00020}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classIterator_adf026305484f737317bf76acbe689bad}{index}};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/**<\ Aktuális\ pozíció\ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00022}00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00023}00023\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00024}00024\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Konstruktor.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ @param\ owner\ A\ string,\ amin\ iterálunk.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ @param\ index\ Kezdő\ index.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00029}\doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{00029}}\ \ \ \ \ \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classEncryptedString}{EncryptedString}}*\ \doxymbox{\hyperlink{classIterator_a7d218db692389136fecf8aa72c740ce4}{owner}},\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classIterator_adf026305484f737317bf76acbe689bad}{index}});}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00030}00030\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00031}00031\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Dereferálás.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ @return\ Az\ aktuális\ karakter\ (dekódolva).}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00035}\doxymbox{\hyperlink{classIterator_af62cf8c1a8bcdc347deeba1e3ca3b3ac}{00035}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classIterator_af62cf8c1a8bcdc347deeba1e3ca3b3ac}{operator*}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00036}00036\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00037}00037\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Prefix\ növelés.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ @return\ Az\ iterátor\ referenciája.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00041}\doxymbox{\hyperlink{classIterator_a091c7cf45883f9196ebcda0ad97b59f8}{00041}}\ \ \ \ \ \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator}}\&\ \doxymbox{\hyperlink{classIterator_a091c7cf45883f9196ebcda0ad97b59f8}{operator++}}();}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00043}00043\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Összehasonlítás.}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00046}\doxymbox{\hyperlink{classIterator_a8da8dfec94f64cac107415cafdf657e8}{00046}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classIterator_a8da8dfec94f64cac107415cafdf657e8}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classIterator_a1ec1f269e4dce01124bd8c49922341b2}{Iterator}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00047}00047\ \};}
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{iterator_8h_source_l00049}00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
