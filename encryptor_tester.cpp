@@ -1,6 +1,6 @@
 #include "encrypted_string.h"
 #include "caesar_encryptor.h"
-#include "iterator.cpp"
+#include "iterator.h"
 
 #include "stdio.h"
 

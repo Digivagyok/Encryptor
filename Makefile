@@ -1,28 +1,25 @@
-CXX := g++
-CXXFLAGS := -std=c++17 -Wall -Wextra -pedantic
+CCX = g++
+CXXFLAGS = -Wall -Wdeprecated -pedantic -DMEMTRACE -g
 
-TARGET_TEST := encryptor_tester
-TARGET_APP := encryptor_app
+HEADERS := $(wildcard *.h) $(wildcard *.hpp)
+SOURCES := $(wildcard *.cpp)
+OBJECTS := $(SOURCES:%.cpp=%.o)
 
-TEST_OBJS := encryptor_tester.o iterator.o
-APP_OBJS := encryptor_app.o iterator.o
-
-.PHONY: all clean test app
-
+.PHONY: all test app clean
 all: app
 
-test: $(TARGET_TEST)
+test: encryptor_tester
 
-app: $(TARGET_APP)
+app: encryptor_app
 
-$(TARGET_TEST): $(TEST_OBJS)
-    $(CXX) $(CXXFLAGS) $^ -o $@
+encryptor_tester: encryptor_tester.o iterator.o
+	$(CCX) $(CXXFLAGS) $^ -o $@
 
-$(TARGET_APP): $(APP_OBJS)
-    $(CXX) $(CXXFLAGS) $^ -o $@
+encryptor_app: encryptor_app.o iterator.o
+	$(CCX) $(CXXFLAGS) $^ -o $@
 
-%.o: %.cpp
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+%.o: %.cpp $(HEADERS)
+	$(CCX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-    rm -f *.o *.exe $(TARGET_TEST) $(TARGET_APP)
+	rm -rf $(OBJECTS) encryptor_tester encryptor_app

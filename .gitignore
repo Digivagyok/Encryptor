@@ -1,2 +1,5 @@
 dokumentaciok
 dokumentaciok/*
+*.o
+encryptor_tester
+encryptor_app
