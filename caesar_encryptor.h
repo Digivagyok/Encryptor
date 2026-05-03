@@ -100,7 +100,9 @@ public:
 
         return c;
     }
-    const char *name() const;
+    const char *name() const {
+        return "CaesarEncryptor";
+    };
 };
 
 #endif

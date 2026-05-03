@@ -40,6 +40,19 @@ public:
      * @brief Virtuális destruktor.
      */
     virtual ~Encryptor() {}
+
+    bool operator==(const Encryptor& rhs) const {
+        if (name() == rhs.name())
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    bool operator!=(const Encryptor& rhs) const {
+        return !(operator==(rhs));
+    }
 };
 
 #endif

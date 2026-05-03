@@ -16,7 +16,7 @@ class EncryptedString;
  */
 class Iterator {
 private:
-    const EncryptedString* owner; /**< Tulajdonos string */
+    const EncryptedString& owner; /**< Tulajdonos string */
     unsigned int index;           /**< Aktuális pozíció */
 
 public:
@@ -26,7 +26,7 @@ public:
      * @param owner A string, amin iterálunk.
      * @param index Kezdő index.
      */
-    Iterator(const EncryptedString* owner, unsigned int index);
+    Iterator(const EncryptedString& owner, unsigned int index) : owner(owner), index(index) {}
 
     /**
      * @brief Dereferálás.
@@ -38,7 +38,10 @@ public:
      * @brief Prefix növelés.
      * @return Az iterátor referenciája.
      */
-    Iterator& operator++();
+    Iterator& operator++() {
+        index++;
+        return *this;
+    }
 
     /**
      * @brief Összehasonlítás.
