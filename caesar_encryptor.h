@@ -38,6 +38,10 @@ public:
         this->shift = shift;
     }
 
+    CaesarEncryptor(const CaesarEncryptor& other) {
+        shift = other.shift;
+    }
+
     char encode(char c) const
     {
         if (c == ' ')
@@ -113,7 +117,7 @@ public:
             return false;
         }
 
-        return getShift() == rhs.getShift();
+        return getShift() == rhs.getShift() && getKey() == rhs.getKey();
     }
 };
 

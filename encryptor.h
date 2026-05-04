@@ -54,6 +54,10 @@ public:
     virtual int getShift() const {
         return -1;
     }
+
+    virtual char getKey() const {
+        return 0;
+    }
 };
 
 #endif

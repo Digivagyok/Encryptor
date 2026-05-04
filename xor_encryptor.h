@@ -2,6 +2,7 @@
 #define XOR_ENCRYPTOR_H
 
 #include "encryptor.h"
+#include <iostream>
 
 /**
  * @file xor_encryptor.h
@@ -25,11 +26,33 @@ public:
      * @brief Konstruktor.
      * @param key A titkosítási kulcs.
      */
-    explicit XorEncryptor(char key);
+    explicit XorEncryptor(char key) : key(key) {
 
-    char encode(char c) const;
-    char decode(char c) const;
-    const char* name() const;
+    }
+
+    char encode(char c) const {
+        return key ^ c;
+    }
+
+    char decode(char c) const {
+        return key ^ c;
+    }
+
+    const char* name() const {
+        return "XOR encryptor";
+    }
+
+    char getKey() const override {
+        return key;
+    }
+
+    bool equals(const Encryptor& rhs) const override {
+        if(name() != std::string(rhs.name())) {
+            return false;
+        }
+
+        return getShift() == rhs.getShift() && getKey() == rhs.getKey();
+    }
 };
 
 #endif
