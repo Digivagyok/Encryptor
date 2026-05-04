@@ -88,10 +88,19 @@ int main()
 
     for (size_t i = 0; i < enc4.size(); i++)
     {
-        std::cout << (char)enc4[i];
+        std::cout << (int)enc4[i] << " ";
+        //std::cout << (char)(int)enc4[i] << "\n";
     }
 
     std::cout << std::endl;
 
+    enc4 += enc3;
+
+    for (Iterator i = enc4.begin(); i != enc4.end(); ++i)
+    {
+        std::cout << *i;
+    }
+
+    std::cout << std::endl;
     return 0;
 }
