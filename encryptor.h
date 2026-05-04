@@ -41,17 +41,18 @@ public:
      */
     virtual ~Encryptor() {}
 
+    virtual bool equals(const Encryptor& rhs) const = 0;
     bool operator==(const Encryptor& rhs) const {
-        if (name() == rhs.name())
-        {
-            return true;
-        }
-
-        return false;
+        return equals(rhs);
     }
 
     bool operator!=(const Encryptor& rhs) const {
-        return !(operator==(rhs));
+        return !(equals(rhs));
+    }
+
+
+    virtual int getShift() const {
+        return -1;
     }
 };
 

@@ -23,7 +23,21 @@ int main() {
     }
 
     std::cout << std::endl;
+
+    CaesarEncryptor ROT5(5);
+    EncryptedString enc2(ROT5);
+
+    std::cout << (ROT13 == ROT5) << std::endl;
+
+    enc2.push_back('a');
+    enc2.push_back('b');
+    enc2.push_back('c');
     
+
+    for (Iterator i = enc2.begin(); i != enc2.end(); ++i)
+    {
+        std::cout << *i;
+    }
 
     return 0;
 }

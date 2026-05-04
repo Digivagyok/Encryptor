@@ -103,6 +103,18 @@ public:
     const char *name() const {
         return "CaesarEncryptor";
     };
+
+    int getShift() const override{
+        return shift;
+    }
+
+    bool equals(const Encryptor& rhs) const override {
+        if(name() != std::string(rhs.name())) {
+            return false;
+        }
+
+        return getShift() == rhs.getShift();
+    }
 };
 
 #endif
