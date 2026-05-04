@@ -1,7 +1,10 @@
 #include "encrypted_string.h"
+#include "iterator.h"
+
 #include "caesar_encryptor.h"
 #include "xor_encryptor.h"
-#include "iterator.h"
+#include "case_toggle_encryptor.h"
+
 
 #include "stdio.h"
 
@@ -102,5 +105,46 @@ int main()
     }
 
     std::cout << std::endl;
+
+
+    std::cout << "Case toggle enc" << std::endl;
+
+    CaseToggleEncryptor casetoggle = CaseToggleEncryptor();
+
+    EncryptedString enc5(casetoggle);
+    enc5.push_back('F');
+    enc5.push_back('l');
+    enc5.push_back('A');
+    enc5.push_back('1');
+    enc5.push_back(' ');
+    enc5.push_back('k');
+    enc5.push_back('O');
+    enc5.push_back('n');
+
+    for (Iterator i = enc5.begin(); i != enc5.end(); ++i)
+    {
+        std::cout << *i;
+    }
+
+    std::cout << std::endl;
+
+    for (size_t i = 0; i < enc5.size(); i++)
+    {
+        std::cout << enc5[i];
+    }
+
+    std::cout << std::endl;
+
+    enc5 += enc4;
+
+    for (Iterator i = enc5.begin(); i != enc5.end(); ++i)
+    {
+        std::cout << *i;
+    }
+
+    std::cout << std::endl;
+
+    
+
     return 0;
 }
